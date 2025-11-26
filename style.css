@@ -184,7 +184,11 @@ body {
 
   min-height: 90vh;
 
-  background: url("bg-ai.jpg") center/cover no-repeat;
+  /* خلفية أعمق + الصورة */
+
+  background: radial-gradient(circle at top, #04101e, #020712 55%),
+
+              url("bg-ai.jpg") center/cover no-repeat;
 
   display: flex;
 
@@ -208,7 +212,9 @@ body {
 
   inset: 0;
 
-  background: radial-gradient(circle at top, rgba(0, 208, 255, 0.22), transparent 55%), rgba(2, 8, 18, 0.92);
+  background: radial-gradient(circle at top, rgba(0, 208, 255, 0.18), transparent 55%),
+
+              rgba(2, 8, 18, 0.94);
 
 }
 
@@ -226,31 +232,31 @@ body {
 
   mix-blend-mode: screen;
 
-  opacity: 0.45;
+  opacity: 0.65; /* أقوى من قبل */
 
   background:
 
-    radial-gradient(circle at 10% 20%, rgba(0, 220, 255, 0.4) 0, transparent 45%),
+    radial-gradient(circle at 8% 18%, rgba(0, 220, 255, 0.55) 0, transparent 45%),
 
-    radial-gradient(circle at 80% 75%, rgba(0, 255, 204, 0.35) 0, transparent 40%),
+    radial-gradient(circle at 82% 78%, rgba(0, 255, 204, 0.5) 0, transparent 40%),
 
     repeating-linear-gradient(
 
       120deg,
 
-      rgba(0, 220, 255, 0.15) 0,
+      rgba(0, 220, 255, 0.18) 0,
 
-      rgba(0, 220, 255, 0.15) 1px,
+      rgba(0, 220, 255, 0.18) 1px,
 
       transparent 1px,
 
-      transparent 7px
+      transparent 6px
 
     );
 
-  background-size: 260% 260%, 220% 220%, 140% 140%;
+  background-size: 250% 250%, 230% 230%, 150% 150%;
 
-  animation: quantumFlow 26s linear infinite;
+  animation: quantumFlow 18s linear infinite;
 
 }
 
@@ -378,7 +384,9 @@ body {
 
   display: inline-block;
 
-  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, color 0.15s ease;
+  transition: transform 0.15s ease, box-shadow 0.15s ease,
+
+              background 0.15s ease, color 0.15s ease;
 
 }
 
@@ -668,37 +676,31 @@ body {
 
   0% {
 
-    background-position:
+    background-position: 0% 0%, 100% 100%, 0% 0%;
 
-      0% 0%,
+  }
 
-      100% 100%,
+  25% {
 
-      0% 0%;
+    background-position: 60% 15%, 40% 85%, 80% 40%;
 
   }
 
   50% {
 
-    background-position:
+    background-position: 100% 40%, 0% 70%, 130% 60%;
 
-      100% 30%,
+  }
 
-      0% 70%,
+  75% {
 
-      120% 60%;
+    background-position: 40% 80%, 80% 20%, 30% 90%;
 
   }
 
   100% {
 
-    background-position:
-
-      0% 0%,
-
-      100% 100%,
-
-      0% 0%;
+    background-position: 0% 0%, 100% 100%, 0% 0%;
 
   }
 
