@@ -24,7 +24,9 @@ body {
 
   background: #050910;
 
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial,
+
+    sans-serif;
 
   color: #f5f7fb;
 
@@ -88,9 +90,9 @@ body {
 
 .nav-logo {
 
-  width: 30px;
+  width: 34px;
 
-  height: 30px;
+  height: 34px;
 
 }
 
@@ -158,9 +160,11 @@ body {
 
 
 
+/* gear button */
+
 .gear-btn {
 
-  display: none;
+  display: none; /* reserved for future mobile menu */
 
   background: none;
 
@@ -184,11 +188,7 @@ body {
 
   min-height: 90vh;
 
-  /* خلفية أعمق + الصورة */
-
-  background: radial-gradient(circle at top, #04101e, #020712 55%),
-
-              url("bg-ai.jpg") center/cover no-repeat;
+  background: url("bg-ai.jpg") center/cover no-repeat;
 
   display: flex;
 
@@ -200,8 +200,6 @@ body {
 
   padding: 120px 16px 80px;
 
-  overflow: hidden;
-
 }
 
 
@@ -212,51 +210,17 @@ body {
 
   inset: 0;
 
-  background: radial-gradient(circle at top, rgba(0, 208, 255, 0.18), transparent 55%),
+  background: radial-gradient(
 
-              rgba(2, 8, 18, 0.94);
+      circle at top,
 
-}
+      rgba(0, 208, 255, 0.22),
 
+      transparent 55%
 
+    ),
 
-/* 🔮 Quantum Flow animated layer */
-
-.quantum-layer {
-
-  position: absolute;
-
-  inset: 0;
-
-  pointer-events: none;
-
-  mix-blend-mode: screen;
-
-  opacity: 0.65; /* أقوى من قبل */
-
-  background:
-
-    radial-gradient(circle at 8% 18%, rgba(0, 220, 255, 0.55) 0, transparent 45%),
-
-    radial-gradient(circle at 82% 78%, rgba(0, 255, 204, 0.5) 0, transparent 40%),
-
-    repeating-linear-gradient(
-
-      120deg,
-
-      rgba(0, 220, 255, 0.18) 0,
-
-      rgba(0, 220, 255, 0.18) 1px,
-
-      transparent 1px,
-
-      transparent 6px
-
-    );
-
-  background-size: 250% 250%, 230% 230%, 150% 150%;
-
-  animation: quantumFlow 18s linear infinite;
+    rgba(2, 8, 18, 0.92);
 
 }
 
@@ -280,8 +244,6 @@ body {
 
 
 
-/* LOGO with float + glow */
-
 .hero-logo-box {
 
   display: inline-flex;
@@ -290,7 +252,7 @@ body {
 
   align-items: center;
 
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 
 }
 
@@ -298,13 +260,9 @@ body {
 
 .hero-logo {
 
-  width: 140px;
+  width: 120px;
 
-  margin-bottom: 6px;
-
-  animation: logoFloatGlow 4.5s ease-in-out infinite;
-
-  filter: drop-shadow(0 0 25px rgba(0, 200, 255, 0.55));
+  margin-bottom: 8px;
 
 }
 
@@ -312,7 +270,7 @@ body {
 
 .hero-tagline {
 
-  font-size: 0.82rem;
+  font-size: 0.85rem;
 
   letter-spacing: 0.16em;
 
@@ -386,7 +344,7 @@ body {
 
   transition: transform 0.15s ease, box-shadow 0.15s ease,
 
-              background 0.15s ease, color 0.15s ease;
+    background 0.15s ease, color 0.15s ease;
 
 }
 
@@ -528,7 +486,33 @@ body {
 
   text-align: left;
 
-  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+  transition: transform 0.18s ease, box-shadow 0.18s ease,
+
+    border-color 0.18s ease;
+
+}
+
+
+
+.card h3 {
+
+  margin-top: 0;
+
+  margin-bottom: 8px;
+
+  font-size: 1.1rem;
+
+}
+
+
+
+.card p {
+
+  margin: 0;
+
+  font-size: 0.93rem;
+
+  opacity: 0.9;
 
 }
 
@@ -570,19 +554,53 @@ body {
 
 
 
-.price {
+.pricing-card h3 {
 
-  font-weight: 600;
+  margin-top: 0;
 
-  color: #7ceeff;
-
-  margin-bottom: 16px;
+  margin-bottom: 6px;
 
 }
 
 
 
-/* CONTACT */
+.price {
+
+  margin-top: 0;
+
+  margin-bottom: 16px;
+
+  font-weight: 600;
+
+  color: #7ceeff;
+
+}
+
+
+
+.pricing-card ul {
+
+  padding-left: 18px;
+
+  margin-bottom: 22px;
+
+}
+
+
+
+.pricing-card li {
+
+  margin-bottom: 6px;
+
+  font-size: 0.93rem;
+
+  opacity: 0.92;
+
+}
+
+
+
+/* CONTACT + FOOTER */
 
 .contact-line {
 
@@ -638,83 +656,13 @@ body {
 
 
 
-/* Logo Floating Glow Effect */
-
-@keyframes logoFloatGlow {
-
-  0% {
-
-    transform: translateY(0);
-
-    filter: drop-shadow(0 0 0 rgba(0, 210, 255, 0.0));
-
-  }
-
-  50% {
-
-    transform: translateY(-6px);
-
-    filter: drop-shadow(0 0 22px rgba(0, 210, 255, 0.55));
-
-  }
-
-  100% {
-
-    transform: translateY(0);
-
-    filter: drop-shadow(0 0 0 rgba(0, 210, 255, 0.0));
-
-  }
-
-}
-
-
-
-/* Quantum Flow background animation */
-
-@keyframes quantumFlow {
-
-  0% {
-
-    background-position: 0% 0%, 100% 100%, 0% 0%;
-
-  }
-
-  25% {
-
-    background-position: 60% 15%, 40% 85%, 80% 40%;
-
-  }
-
-  50% {
-
-    background-position: 100% 40%, 0% 70%, 130% 60%;
-
-  }
-
-  75% {
-
-    background-position: 40% 80%, 80% 20%, 30% 90%;
-
-  }
-
-  100% {
-
-    background-position: 0% 0%, 100% 100%, 0% 0%;
-
-  }
-
-}
-
-
-
 /* RESPONSIVE */
 
 @media (max-width: 768px) {
 
   .nav-links {
 
-    display: none;
+    display: none; /* simple: hide menu on very small screens for now */
 
   }
 
