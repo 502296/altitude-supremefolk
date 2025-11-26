@@ -1,12 +1,12 @@
-// Smooth scroll for internal links
+// Smooth scroll للروابط الداخلية
 
 document.querySelectorAll('a[href^="#"]').forEach((link) => {
 
   link.addEventListener("click", (e) => {
 
-    const targetId = link.getAttribute("href").slice(1);
+    const id = link.getAttribute("href").slice(1);
 
-    const target = document.getElementById(targetId);
+    const target = document.getElementById(id);
 
     if (target) {
 
@@ -22,7 +22,7 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
 
 
 
-// Prevent real submit (حتى الآن فقط واجهة)
+// منع الإرسال الحقيقي الآن (فقط واجهة)
 
 const form = document.getElementById("contact-form");
 
