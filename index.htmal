@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Altitude SupremeFolk – AI Automation for Scalable Growth</title>
+
+  <link rel="stylesheet" href="styles.css" />
+
+</head>
+
+
+
+<body>
+
+  <div class="hero">
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+
+      <h1>AI Automation That Works While You Sleep</h1>
+
+      <p class="subtitle">
+
+        Altitude SupremeFolk helps businesses capture, qualify, and convert 
+
+        leads automatically—without hiring extra staff or wasting time on manual follow-ups.
+
+      </p>
+
+
+
+      <a href="#contact" class="cta-btn">Book a Free Discovery Call</a>
+
+    </div>
+
+  </div>
+
+
+
+  <section class="section">
+
+    <h2>What We Build</h2>
+
+    <p class="section-desc">
+
+      We create custom AI systems that handle your entire lead flow—from inbound inquiry 
+
+      to conversion—24/7 and fully automated.
+
+    </p>
+
+
+
+    <div class="cards">
+
+      <div class="card">
+
+        <h3>Instant Lead Response</h3>
+
+        <p>AI that replies instantly to every prospect, increasing conversions significantly.</p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>Smart Qualification</h3>
+
+        <p>Automatically qualify leads based on budget, timeline, and fit.</p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>Automated Follow-ups</h3>
+
+        <p>Nurture prospects through personalized sequences until they're ready to buy.</p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="section">
+
+    <h2>Why Business Owners Love Us</h2>
+
+    <div class="cards">
+
+      <div class="card">
+
+        <h3>24/7 Engagement</h3>
+
+        <p>Your AI doesn’t sleep — it responds, follows up, and books calls any time of day.</p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>Less Work, More Revenue</h3>
+
+        <p>Replace repetitive tasks with automation and focus on what actually grows your business.</p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>Plug & Play</h3>
+
+        <p>We integrate directly into your existing workflow. No tech headaches.</p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="section" id="contact">
+
+    <h2>Get In Touch</h2>
+
+    <p class="section-desc">
+
+      Ready to automate your business and scale effortlessly? Contact us today.
+
+    </p>
+
+
+
+    <div class="contact-box">
+
+      <p><strong>Email:</strong> support@altitudesupremefolk.dev</p>
+
+      <p><strong>WhatsApp:</strong> +1 234 567 8900</p>
+
+      <p><strong>Location:</strong> Remote · Worldwide</p>
+
+
+
+      <a href="mailto:support@altitudesupremefolk.dev" class="cta-btn-secondary">
+
+        Send Email
+
+      </a>
+
+    </div>
+
+  </section>
+
+
+
+  <footer>
+
+    © <span id="year"></span> Altitude SupremeFolk — AI Automation Systems
+
+  </footer>
+
+
+
+  <script>
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+  </script>
+
+</body>
+
+</html>
