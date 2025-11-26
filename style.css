@@ -196,6 +196,8 @@ body {
 
   padding: 120px 16px 80px;
 
+  overflow: hidden;
+
 }
 
 
@@ -207,6 +209,48 @@ body {
   inset: 0;
 
   background: radial-gradient(circle at top, rgba(0, 208, 255, 0.22), transparent 55%), rgba(2, 8, 18, 0.92);
+
+}
+
+
+
+/* 🔮 Quantum Flow animated layer */
+
+.quantum-layer {
+
+  position: absolute;
+
+  inset: 0;
+
+  pointer-events: none;
+
+  mix-blend-mode: screen;
+
+  opacity: 0.45;
+
+  background:
+
+    radial-gradient(circle at 10% 20%, rgba(0, 220, 255, 0.4) 0, transparent 45%),
+
+    radial-gradient(circle at 80% 75%, rgba(0, 255, 204, 0.35) 0, transparent 40%),
+
+    repeating-linear-gradient(
+
+      120deg,
+
+      rgba(0, 220, 255, 0.15) 0,
+
+      rgba(0, 220, 255, 0.15) 1px,
+
+      transparent 1px,
+
+      transparent 7px
+
+    );
+
+  background-size: 260% 260%, 220% 220%, 140% 140%;
+
+  animation: quantumFlow 26s linear infinite;
 
 }
 
@@ -253,6 +297,8 @@ body {
   margin-bottom: 6px;
 
   animation: logoFloatGlow 4.5s ease-in-out infinite;
+
+  filter: drop-shadow(0 0 25px rgba(0, 200, 255, 0.55));
 
 }
 
@@ -390,7 +436,7 @@ body {
 
 
 
-/* CARDS */
+/* SECTIONS */
 
 .section {
 
@@ -441,6 +487,8 @@ body {
 }
 
 
+
+/* CARDS */
 
 .cards {
 
@@ -607,6 +655,50 @@ body {
     transform: translateY(0);
 
     filter: drop-shadow(0 0 0 rgba(0, 210, 255, 0.0));
+
+  }
+
+}
+
+
+
+/* Quantum Flow background animation */
+
+@keyframes quantumFlow {
+
+  0% {
+
+    background-position:
+
+      0% 0%,
+
+      100% 100%,
+
+      0% 0%;
+
+  }
+
+  50% {
+
+    background-position:
+
+      100% 30%,
+
+      0% 70%,
+
+      120% 60%;
+
+  }
+
+  100% {
+
+    background-position:
+
+      0% 0%,
+
+      100% 100%,
+
+      0% 0%;
 
   }
 
