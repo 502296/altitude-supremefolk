@@ -10,7 +10,7 @@
 
   <title>Altitude SupremeFolk – AI Automation That Works While You Sleep</title>
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles.css" />
 
 </head>
 
@@ -18,13 +18,13 @@
 
   <div class="page">
 
-    <!-- Header / Navbar -->
+    <!-- Header -->
 
     <header class="header">
 
       <div class="brand">
 
-        <img src="logo-altitude.png" alt="Altitude SupremeFolk logo" class="brand-logo" />
+        <img src="images/altitude-logo-small.png" alt="Altitude SupremeFolk" class="brand-logo" />
 
         <span class="brand-name">Altitude SupremeFolk</span>
 
@@ -32,15 +32,13 @@
 
       <nav class="nav">
 
-        <a href="#hero">Home</a>
+        <a href="#what-we-build" data-section="what-we-build">What We Build</a>
 
-        <a href="#what-we-build">What We Build</a>
+        <a href="#pricing" data-section="pricing">Pricing</a>
 
-        <a href="#pricing">Pricing</a>
+        <a href="#ai-demo" data-section="ai-demo">AI Demo</a>
 
-        <a href="#ai-demo">AI Demo</a>
-
-        <a href="#contact">Contact</a>
+        <a href="#contact" data-section="contact">Contact</a>
 
       </nav>
 
@@ -48,19 +46,21 @@
 
 
 
-    <!-- Hero -->
-
     <main>
+
+      <!-- HERO (الشاشة الرئيسية فقط) -->
 
       <section id="hero" class="hero">
 
         <div class="hero-inner">
 
-          <!-- Logo card -->
+          <!-- كرت العقل الاصطناعي -->
 
           <div class="hero-logo-card">
 
-            <img src="hero-logo-card.png" alt="Altitude SupremeFolk AI systems" />
+            <!-- ضع هنا صورة الكرت الذي تحبه -->
+
+            <img src="images/altitude-ai-card.png" alt="AI systems for high-performing teams" />
 
             <p class="logo-caption">AI systems for high-performing teams.</p>
 
@@ -68,7 +68,7 @@
 
 
 
-          <!-- Copy -->
+          <!-- النص -->
 
           <div class="hero-copy">
 
@@ -88,43 +88,25 @@
 
             <div class="hero-actions">
 
-              <a href="#contact" class="btn btn-primary">Contact Us</a>
+              <a href="#contact" data-section="contact" class="btn btn-primary">Contact Us</a>
 
-              <a href="#ai-demo" class="btn btn-ghost">See AI Demo Concept</a>
+              <a href="#ai-demo" data-section="ai-demo" class="btn btn-ghost">See AI Demo Concept</a>
 
             </div>
 
 
 
-            <button class="btn-link" onclick="document.querySelector('#what-we-build').scrollIntoView({behavior: 'smooth'});">
+            <!-- أزرار الأقسام (تحت الهيرو لكن ما تفتح شيء إلا عند الضغط) -->
 
-              ↓ What We Build
+            <div class="hero-links">
 
-            </button>
+              <button class="pill-link" data-section="what-we-build">What We Build</button>
 
+              <button class="pill-link" data-section="pricing">Pricing</button>
 
+              <button class="pill-link" data-section="ai-demo">AI Demo</button>
 
-            <div class="hero-meta">
-
-              <ul>
-
-                <li>24/7 lead engagement</li>
-
-                <li>Plugs into your existing tools</li>
-
-                <li>Built-for-you automation</li>
-
-              </ul>
-
-              <div class="hero-metric">
-
-                <span class="metric-label">Average response time</span>
-
-                <span class="metric-value">~4 seconds</span>
-
-                <span class="metric-sub">Across chat, email, and web forms.</span>
-
-              </div>
+              <button class="pill-link" data-section="contact">Contact</button>
 
             </div>
 
@@ -134,7 +116,7 @@
 
 
 
-        <!-- Neural network light lines -->
+        <!-- خطوط الخلفية العصبية -->
 
         <div class="ai-lines"></div>
 
@@ -142,9 +124,13 @@
 
 
 
+      <!-- الأقسام المخفية تظهر فقط عند الضغط -->
+
+
+
       <!-- What We Build -->
 
-      <section id="what-we-build" class="section section-what">
+      <section id="what-we-build" class="section collapsible-section">
 
         <div class="section-header">
 
@@ -162,8 +148,6 @@
 
         </div>
 
-
-
         <div class="cards-grid">
 
           <article class="card">
@@ -180,8 +164,6 @@
 
           </article>
 
-
-
           <article class="card">
 
             <h3>Smart Qualification</h3>
@@ -195,8 +177,6 @@
             </p>
 
           </article>
-
-
 
           <article class="card">
 
@@ -218,9 +198,9 @@
 
 
 
-      <!-- Pricing (without showing 3,000–8,000) -->
+      <!-- Pricing -->
 
-      <section id="pricing" class="section section-pricing">
+      <section id="pricing" class="section collapsible-section">
 
         <div class="section-header">
 
@@ -236,8 +216,6 @@
 
         </div>
 
-
-
         <div class="pricing-card">
 
           <p class="pricing-label">DONE-FOR-YOU AI AUTOMATION</p>
@@ -246,7 +224,7 @@
 
           <p class="pricing-copy">
 
-            Pricing is tailored to your scope and is finalized after a short strategy call.
+            Pricing is tailored to your scope and finalized after a short strategy call.
 
           </p>
 
@@ -262,7 +240,7 @@
 
           </ul>
 
-          <a href="#contact" class="btn btn-primary">Request Proposal</a>
+          <a href="#contact" data-section="contact" class="btn btn-primary">Request Proposal</a>
 
         </div>
 
@@ -270,9 +248,9 @@
 
 
 
-      <!-- AI Demo (clean, without chat bubbles) -->
+      <!-- AI Demo -->
 
-      <section id="ai-demo" class="section section-ai-demo">
+      <section id="ai-demo" class="section collapsible-section">
 
         <div class="section-header">
 
@@ -296,15 +274,15 @@
 
         </div>
 
-        <a href="#contact" class="btn btn-ghost">Tell Us About Your Use Case</a>
+        <a href="#contact" data-section="contact" class="btn btn-ghost">Tell Us About Your Use Case</a>
 
       </section>
 
 
 
-      <!-- Contact (kept, مع بعض الترتيب البسيط) -->
+      <!-- Contact -->
 
-      <section id="contact" class="section section-contact">
+      <section id="contact" class="section collapsible-section">
 
         <div class="section-header">
 
@@ -332,8 +310,6 @@
 
         </div>
 
-
-
         <div class="contact-layout">
 
           <form class="contact-form">
@@ -346,8 +322,6 @@
 
             </label>
 
-
-
             <label>
 
               Company
@@ -355,8 +329,6 @@
               <input type="text" name="company" placeholder="Supreme Marketing Co." />
 
             </label>
-
-
 
             <label>
 
@@ -366,8 +338,6 @@
 
             </label>
 
-
-
             <label>
 
               Role
@@ -375,8 +345,6 @@
               <input type="text" name="role" placeholder="Founder / Head of Growth / COO" />
 
             </label>
-
-
 
             <label>
 
@@ -394,13 +362,9 @@
 
             </label>
 
-
-
             <button type="submit" class="btn btn-primary">Send Message</button>
 
           </form>
-
-
 
           <div class="contact-side">
 
@@ -434,9 +398,57 @@
 
   <script>
 
-    // year in footer
+    // سنة الفوتر
 
     document.getElementById('year').textContent = new Date().getFullYear();
+
+
+
+    // إظهار / إخفاء الأقسام عند الضغط
+
+    const triggers = document.querySelectorAll('[data-section]');
+
+    const sections = document.querySelectorAll('.collapsible-section');
+
+
+
+    function openSection(id) {
+
+      sections.forEach((sec) => {
+
+        if (sec.id === id) {
+
+          sec.classList.add('active');
+
+          sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+        } else {
+
+          sec.classList.remove('active');
+
+        }
+
+      });
+
+    }
+
+
+
+    triggers.forEach((el) => {
+
+      el.addEventListener('click', (e) => {
+
+        const id = el.getAttribute('data-section');
+
+        if (!id) return;
+
+        e.preventDefault();
+
+        openSection(id);
+
+      });
+
+    });
 
   </script>
 
