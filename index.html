@@ -8,9 +8,9 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Altitude SupremeFolk – AI Automation Systems</title>
+  <title>Altitude SupremeFolk – AI Automation That Works While You Sleep</title>
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles.css" />
 
 </head>
 
@@ -18,9 +18,9 @@
 
   <div class="page">
 
-    <!-- Top Bar -->
+    <!-- Header / Navbar -->
 
-    <header class="top-nav">
+    <header class="header">
 
       <div class="brand">
 
@@ -30,45 +30,57 @@
 
       </div>
 
+      <nav class="nav">
+
+        <a href="#hero">Home</a>
+
+        <a href="#what-we-build">What We Build</a>
+
+        <a href="#pricing">Pricing</a>
+
+        <a href="#ai-demo">AI Demo</a>
+
+        <a href="#contact">Contact</a>
+
+      </nav>
+
     </header>
 
 
 
-    <!-- HERO -->
+    <!-- Hero -->
 
     <main>
 
-      <section class="hero">
+      <section id="hero" class="hero">
 
         <div class="hero-inner">
 
+          <!-- Logo card -->
+
           <div class="hero-logo-card">
 
-            <img src="logo-altitude.png" alt="Altitude SupremeFolk" class="hero-logo-img" />
+            <img src="hero-logo-card.png" alt="Altitude SupremeFolk AI systems" />
 
-            <p class="hero-logo-caption">AI systems for high-performing teams.</p>
+            <p class="logo-caption">AI systems for high-performing teams.</p>
 
           </div>
 
 
 
+          <!-- Copy -->
+
           <div class="hero-copy">
 
             <p class="eyebrow">AI AUTOMATION SYSTEMS</p>
 
-            <h1 class="hero-title">
+            <h1>AI Automation That Works While You Sleep</h1>
 
-              AI Automation That Works<br />
+            <p class="subtitle">
 
-              While You Sleep
+              We build end-to-end AI systems that respond, qualify, and handle your
 
-            </h1>
-
-            <p class="hero-subtitle">
-
-              We build end-to-end AI systems that respond, qualify, and handle your leads 24/7 — so you can
-
-              focus on growing the business.
+              leads 24/7 — so you can focus on growing the business.
 
             </p>
 
@@ -78,43 +90,73 @@
 
               <a href="#contact" class="btn btn-primary">Contact Us</a>
 
-              <a href="#what-we-build" class="btn btn-ghost">See What We Build</a>
+              <a href="#ai-demo" class="btn btn-ghost">See AI Demo Concept</a>
 
             </div>
 
 
 
-            <ul class="hero-bullets">
+            <button class="btn-link" onclick="document.querySelector('#what-we-build').scrollIntoView({behavior: 'smooth'});">
 
-              <li>24/7 lead engagement</li>
+              ↓ What We Build
 
-              <li>Plugs into your existing tools</li>
+            </button>
 
-              <li>Built-for-you automation</li>
 
-            </ul>
+
+            <div class="hero-meta">
+
+              <ul>
+
+                <li>24/7 lead engagement</li>
+
+                <li>Plugs into your existing tools</li>
+
+                <li>Built-for-you automation</li>
+
+              </ul>
+
+              <div class="hero-metric">
+
+                <span class="metric-label">Average response time</span>
+
+                <span class="metric-value">~4 seconds</span>
+
+                <span class="metric-sub">Across chat, email, and web forms.</span>
+
+              </div>
+
+            </div>
 
           </div>
 
         </div>
 
+
+
+        <!-- Neural network light lines -->
+
+        <div class="ai-lines"></div>
+
       </section>
 
 
 
-      <!-- WHAT WE BUILD -->
+      <!-- What We Build -->
 
-      <section id="what-we-build" class="section">
+      <section id="what-we-build" class="section section-what">
 
         <div class="section-header">
 
-          <h2>What We Build</h2>
+          <span class="section-tag">What We Build</span>
+
+          <h2>Custom AI workflows that plug into your current stack</h2>
 
           <p>
 
-            We design custom AI workflows that plug into your existing stack — CRM, calendar, email, and messaging —
+            We design AI workflows that connect to your CRM, calendar, email, and messaging tools —
 
-            and automate the entire journey from first touch to booked call.
+            then automate the entire journey from first touch to booked call.
 
           </p>
 
@@ -122,17 +164,17 @@
 
 
 
-        <div class="card-grid">
+        <div class="cards-grid">
 
-          <article class="info-card">
+          <article class="card">
 
             <h3>Instant Lead Response</h3>
 
             <p>
 
-              AI that replies instantly to every prospect on email, chat, or forms — increasing conversions and
+              AI that replies instantly to every prospect on email, chat, or forms — increasing
 
-              stopping leads from going cold.
+              conversions and stopping leads from going cold.
 
             </p>
 
@@ -140,15 +182,15 @@
 
 
 
-          <article class="info-card">
+          <article class="card">
 
             <h3>Smart Qualification</h3>
 
             <p>
 
-              Automatically qualify leads based on budget, timeline, and fit, then route only high-intent leads
+              Automatically qualify leads based on budget, timeline, and fit, then route only
 
-              to your calendar.
+              high-intent leads straight to your calendar.
 
             </p>
 
@@ -156,15 +198,15 @@
 
 
 
-          <article class="info-card">
+          <article class="card">
 
             <h3>Automated Follow-Ups</h3>
 
             <p>
 
-              Nurture prospects with personalized follow-up sequences until they’re ready to buy — no manual chasing,
+              Nurture prospects with personalized follow-up sequences until they’re ready to buy —
 
-              no spreadsheet chaos.
+              without manual chasing or spreadsheet chaos.
 
             </p>
 
@@ -176,21 +218,117 @@
 
 
 
-      <!-- CONTACT -->
+      <!-- Pricing (without showing 3,000–8,000) -->
+
+      <section id="pricing" class="section section-pricing">
+
+        <div class="section-header">
+
+          <span class="section-tag">Simple, Transparent Pricing</span>
+
+          <h2>One plan to launch and scale your AI automation</h2>
+
+          <p>
+
+            We keep it simple: one retainer, no long-term contracts, and no surprise add-ons.
+
+          </p>
+
+        </div>
+
+
+
+        <div class="pricing-card">
+
+          <p class="pricing-label">DONE-FOR-YOU AI AUTOMATION</p>
+
+          <h3>Custom Monthly Retainer</h3>
+
+          <p class="pricing-copy">
+
+            Pricing is tailored to your scope and is finalized after a short strategy call.
+
+          </p>
+
+          <ul>
+
+            <li>Discovery &amp; strategy workshop</li>
+
+            <li>Design of your full lead-flow automation</li>
+
+            <li>Implementation, testing, and optimization</li>
+
+            <li>Ongoing monitoring and iteration</li>
+
+          </ul>
+
+          <a href="#contact" class="btn btn-primary">Request Proposal</a>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- AI Demo (clean, without chat bubbles) -->
+
+      <section id="ai-demo" class="section section-ai-demo">
+
+        <div class="section-header">
+
+          <span class="section-tag">AI Demo – Coming Soon</span>
+
+          <h2>See your leads handled in real time</h2>
+
+          <p>
+
+            We’re building an interactive demo that shows how Altitude SupremeFolk can respond to
+
+            real inbound leads, qualify them, and book calls automatically — all in one unified AI layer.
+
+          </p>
+
+          <p>
+
+            Share your use case below and we’ll invite you to the private demo as soon as it’s ready.
+
+          </p>
+
+        </div>
+
+        <a href="#contact" class="btn btn-ghost">Tell Us About Your Use Case</a>
+
+      </section>
+
+
+
+      <!-- Contact (kept, مع بعض الترتيب البسيط) -->
 
       <section id="contact" class="section section-contact">
 
         <div class="section-header">
 
-          <h2>Contact Us</h2>
+          <span class="section-tag">Contact</span>
+
+          <h2>Tell us what you want AI to handle</h2>
 
           <p>
 
-            Ready to explore automation for your business? Send us a message with a bit of context and we’ll get
+            Send us a quick overview of your offer and lead flow. We’ll review and reply with
 
-            back to you with next steps.
+            next steps, usually within one business day.
 
           </p>
+
+          <ul class="contact-bullets">
+
+            <li>Your website and main offer.</li>
+
+            <li>Where most of your leads currently come from.</li>
+
+            <li>Any tools you already use (CRM, calendar, email, etc.).</li>
+
+          </ul>
 
         </div>
 
@@ -200,61 +338,71 @@
 
           <form class="contact-form">
 
-            <div class="field">
+            <label>
 
-              <label for="full-name">Full Name</label>
+              Full Name
 
-              <input id="full-name" type="text" placeholder="Alex Smith" />
+              <input type="text" name="name" placeholder="Alex Smith" />
 
-            </div>
-
-
-
-            <div class="field">
-
-              <label for="company">Company</label>
-
-              <input id="company" type="text" placeholder="Supreme Marketing Co." />
-
-            </div>
+            </label>
 
 
 
-            <div class="field">
+            <label>
 
-              <label for="email">Work Email</label>
+              Company
 
-              <input id="email" type="email" placeholder="you@company.com" />
+              <input type="text" name="company" placeholder="Supreme Marketing Co." />
 
-            </div>
-
-
-
-            <div class="field">
-
-              <label for="role">Role</label>
-
-              <input id="role" type="text" placeholder="Founder / Head of Growth / COO" />
-
-            </div>
+            </label>
 
 
 
-            <div class="field">
+            <label>
 
-              <label for="message">What do you want AI to handle for you?</label>
+              Work Email
 
-              <textarea id="message" rows="4"
+              <input type="email" name="email" placeholder="you@company.com" />
 
-                placeholder="Example: Qualify inbound leads and book calls automatically so our team can focus on closing."></textarea>
-
-            </div>
+            </label>
 
 
 
-            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            <label>
+
+              Role
+
+              <input type="text" name="role" placeholder="Founder / Head of Growth / COO" />
+
+            </label>
 
 
+
+            <label>
+
+              What do you want AI to handle for you?
+
+              <textarea
+
+                name="message"
+
+                rows="4"
+
+                placeholder="Example: Qualify inbound leads and book calls automatically so our team can focus on closing."
+
+              ></textarea>
+
+            </label>
+
+
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+
+          </form>
+
+
+
+          <div class="contact-side">
 
             <p class="contact-email">
 
@@ -264,7 +412,7 @@
 
             </p>
 
-          </form>
+          </div>
 
         </div>
 
@@ -274,15 +422,23 @@
 
 
 
-    <!-- FOOTER -->
-
     <footer class="footer">
 
-      <p>© 2025 Altitude SupremeFolk — AI Automation Systems</p>
+      <p>© <span id="year"></span> Altitude SupremeFolk. All rights reserved.</p>
 
     </footer>
 
   </div>
+
+
+
+  <script>
+
+    // year in footer
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+  </script>
 
 </body>
 
