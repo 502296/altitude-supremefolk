@@ -1,6 +1,10 @@
+
+
 <!DOCTYPE html>
 
 <html lang="en">
+
+
 
 <head>
 
@@ -8,7 +12,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Altitude SupremeFolk – AI Automation</title>
+  <title>Altitude SupremeFolk – AI Automation Systems</title>
 
   <link rel="stylesheet" href="style.css" />
 
@@ -18,100 +22,314 @@
 
 <body>
 
-  <header class="header">
+  <!-- NAVBAR -->
 
-    <div class="brand">
+  <header class="navbar">
 
-      <!-- Logo small -->
+    <div class="nav-inner">
 
-      <img src="logo-altitude.png" class="brand-logo" alt="AISF Logo" />
+      <div class="nav-left">
 
-      <span class="brand-name">Altitude SupremeFolk</span>
+        <img src="logo-altitude.png" alt="Altitude SupremeFolk Logo" class="nav-logo" />
+
+        <span class="nav-brand">Altitude SupremeFolk</span>
+
+      </div>
+
+
+
+      <nav class="nav-links">
+
+        <a href="#services">Services</a>
+
+        <a href="#benefits">Why Us</a>
+
+        <a href="#pricing">Pricing</a>
+
+        <a href="#demo">AI Demo</a>
+
+        <a href="#contact" class="nav-cta">Contact</a>
+
+      </nav>
+
+
+
+      <!-- simple gear menu icon for future expansion -->
+
+      <button class="gear-btn" aria-label="Menu">
+
+        ⚙
+
+      </button>
 
     </div>
-
-
-
-    <nav class="nav">
-
-      <a data-section="what">What We Build</a>
-
-      <a data-section="pricing">Pricing</a>
-
-      <a data-section="demo">AI Demo</a>
-
-      <a data-section="contact">Contact</a>
-
-    </nav>
 
   </header>
 
 
 
-  <!-- HERO -->
+  <!-- HERO SECTION -->
 
-  <section class="hero">
+  <section class="hero" id="top">
 
-
-
-    <!-- الخلفية = صورة hero-logo-card.png -->
-
-    <div class="hero-bg">
-
-      <img src="hero-logo-card.png" alt="AI Background">
-
-    </div>
+    <div class="overlay"></div>
 
 
 
     <div class="hero-content">
 
+      <div class="hero-logo-box">
+
+        <img src="logo-altitude.png" alt="Altitude SupremeFolk Logo" class="hero-logo" />
+
+        <span class="hero-tagline">AI Automation Systems</span>
+
+      </div>
+
+
+
       <h1>AI Automation That Works While You Sleep</h1>
 
+      <p class="hero-subtitle">
 
+        We build end-to-end AI systems that respond, qualify, and handle your leads
 
-      <p class="subtitle">
-
-        AI systems that respond to your leads 24/7 — so you can focus on growth.
+        24/7 — so you can focus on growing the business.
 
       </p>
 
 
 
-      <div class="buttons">
+      <div class="hero-actions">
 
-        <button data-section="contact" class="btn primary">Contact Us</button>
+        <a href="#contact" class="main-btn">Contact Us</a>
 
-        <button data-section="demo" class="btn ghost">See AI Demo</button>
+        <a href="#demo" class="ghost-btn">See AI Demo Concept</a>
 
       </div>
 
     </div>
 
+  </section>
 
 
-    <!-- خطوط الشبكة العصبية -->
 
-    <div class="ai-lines"></div>
+  <!-- SERVICES -->
+
+  <section class="section" id="services">
+
+    <h2>What We Build</h2>
+
+    <p class="section-desc">
+
+      We design custom AI workflows that plug into your existing stack — CRM, calendar,
+
+      email, and messaging — and automate the entire journey from first touch to booked call.
+
+    </p>
+
+
+
+    <div class="cards">
+
+      <div class="card">
+
+        <h3>Instant Lead Response</h3>
+
+        <p>
+
+          AI that replies instantly to every prospect on email, chat, or forms —
+
+          increasing conversions and stopping leads from going cold.
+
+        </p>
+
+      </div>
+
+
+
+      <div class="card">
+
+        <h3>Smart Qualification</h3>
+
+        <p>
+
+          Automatically qualify leads based on budget, timeline, and fit, then route
+
+          only high-intent leads to your calendar.
+
+        </p>
+
+      </div>
+
+
+
+      <div class="card">
+
+        <h3>Automated Follow-Ups</h3>
+
+        <p>
+
+          Nurture prospects with personalized follow-up sequences until they're ready
+
+          to buy — no manual chasing.
+
+        </p>
+
+      </div>
+
+    </div>
 
   </section>
 
 
 
-  <!-- الأقسام (مخفية) -->
+  <!-- BENEFITS -->
 
-  <section id="what" class="section">What we build content here...</section>
+  <section class="section alt" id="benefits">
 
-  <section id="pricing" class="section">Pricing content here...</section>
-
-  <section id="demo" class="section">Demo content here...</section>
-
-  <section id="contact" class="section">Contact content here...</section>
+    <h2>Why Business Owners Love Us</h2>
 
 
 
-  <script src="script.js"></script>
+    <div class="cards">
+
+      <div class="card">
+
+        <h3>24/7 Engagement</h3>
+
+        <p>Your AI responds, follows up, and books calls at any hour of the day.</p>
+
+      </div>
+
+
+
+      <div class="card">
+
+        <h3>Less Work, More Revenue</h3>
+
+        <p>Automate repetitive tasks and focus your team on what actually grows the business.</p>
+
+      </div>
+
+
+
+      <div class="card">
+
+        <h3>Plug &amp; Play</h3>
+
+        <p>We integrate into your current tools. No engineering team required, no tech headaches.</p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- PRICING -->
+
+  <section class="section" id="pricing">
+
+    <h2>Simple, Transparent Pricing</h2>
+
+    <p class="section-desc">
+
+      One plan to launch, test, and scale your AI automation — without long-term contracts.
+
+    </p>
+
+
+
+    <div class="pricing-card">
+
+      <h3>Done-For-You AI Automation</h3>
+
+      <p class="price">Custom Monthly Retainer</p>
+
+      <ul>
+
+        <li>Discovery &amp; strategy workshop</li>
+
+        <li>Design of your full lead-flow automation</li>
+
+        <li>Implementation &amp; integration with your tools</li>
+
+        <li>Monitoring &amp; optimization each month</li>
+
+      </ul>
+
+      <a href="#contact" class="main-btn wide">Request Proposal</a>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- AI DEMO -->
+
+  <section class="section alt" id="demo">
+
+    <h2>AI Demo – Coming Soon</h2>
+
+    <p class="section-desc">
+
+      We're building an interactive demo that shows how Altitude SupremeFolk can
+
+      respond to real leads, qualify them, and book calls automatically.
+
+    </p>
+
+    <p class="section-desc">
+
+      Share your use case and we'll tailor the demo to your business.
+
+    </p>
+
+    <a href="#contact" class="ghost-btn">Tell Us About Your Use Case</a>
+
+  </section>
+
+
+
+  <!-- CONTACT -->
+
+  <section class="section" id="contact">
+
+    <h2>Contact Us</h2>
+
+    <p class="section-desc">
+
+      Ready to explore automation for your business? Send us a message and we'll get back to you.
+
+    </p>
+
+
+
+    <p class="contact-line">
+
+      <strong>Email:</strong>
+
+      <a href="mailto:contact@altitudesupremefolk.dev">contact@altitudesupremefolk.dev</a>
+
+    </p>
+
+
+
+    <footer class="footer">
+
+      © 2025 Altitude SupremeFolk — AI Automation Systems
+
+    </footer>
+
+  </section>
 
 </body>
 
+
+
 </html>
+
+
