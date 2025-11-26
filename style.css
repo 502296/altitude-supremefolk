@@ -24,9 +24,7 @@ body {
 
   background: #050910;
 
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial,
-
-    sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
 
   color: #f5f7fb;
 
@@ -90,9 +88,9 @@ body {
 
 .nav-logo {
 
-  width: 34px;
+  width: 32px;
 
-  height: 34px;
+  height: 32px;
 
 }
 
@@ -102,7 +100,7 @@ body {
 
   font-weight: 600;
 
-  font-size: 0.98rem;
+  font-size: 1rem;
 
   letter-spacing: 0.03em;
 
@@ -160,11 +158,9 @@ body {
 
 
 
-/* gear button */
-
 .gear-btn {
 
-  display: none; /* reserved for future mobile menu */
+  display: none;
 
   background: none;
 
@@ -200,6 +196,8 @@ body {
 
   padding: 120px 16px 80px;
 
+  overflow: hidden;
+
 }
 
 
@@ -210,27 +208,85 @@ body {
 
   inset: 0;
 
-  background: radial-gradient(
-
-      circle at top,
-
-      rgba(0, 208, 255, 0.22),
-
-      transparent 55%
-
-    ),
-
-    rgba(2, 8, 18, 0.92);
+  background: radial-gradient(circle at top, rgba(0, 208, 255, 0.22), transparent 55%), rgba(2, 8, 18, 0.92);
 
 }
 
 
 
+/* ✨ Circuit Glow – نقاط إضاءة خلف الخطوط */
+
+.quantum-layer {
+
+  position: absolute;
+
+  inset: 0;
+
+  pointer-events: none;
+
+  z-index: 2;
+
+  mix-blend-mode: screen;
+
+
+
+  background:
+
+    radial-gradient(circle at 22% 35%, rgba(0, 230, 255, 0.7) 0, rgba(0, 230, 255, 0) 55%),
+
+    radial-gradient(circle at 55% 28%, rgba(0, 255, 210, 0.65) 0, rgba(0, 255, 210, 0) 55%),
+
+    radial-gradient(circle at 78% 55%, rgba(0, 210, 255, 0.7) 0, rgba(0, 210, 255, 0) 55%);
+
+
+
+  opacity: 0.18;
+
+  animation: circuitPulse 4s ease-in-out infinite alternate;
+
+}
+
+
+
+/* نبض خفيف */
+
+@keyframes circuitPulse {
+
+  0% {
+
+    opacity: 0.08;
+
+    filter: blur(0px);
+
+  }
+
+  50% {
+
+    opacity: 0.32;
+
+    filter: blur(1.2px);
+
+  }
+
+  100% {
+
+    opacity: 0.16;
+
+    filter: blur(0.4px);
+
+  }
+
+}
+
+
+
+/* HERO CONTENT */
+
 .hero-content {
 
   position: relative;
 
-  z-index: 1;
+  z-index: 3;
 
   max-width: 760px;
 
@@ -244,6 +300,8 @@ body {
 
 
 
+/* LOGO float + glow */
+
 .hero-logo-box {
 
   display: inline-flex;
@@ -252,7 +310,7 @@ body {
 
   align-items: center;
 
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 
 }
 
@@ -260,9 +318,13 @@ body {
 
 .hero-logo {
 
-  width: 120px;
+  width: 140px;
 
-  margin-bottom: 8px;
+  margin-bottom: 6px;
+
+  animation: logoFloatGlow 4.5s ease-in-out infinite;
+
+  filter: drop-shadow(0 0 25px rgba(0, 200, 255, 0.55));
 
 }
 
@@ -270,7 +332,7 @@ body {
 
 .hero-tagline {
 
-  font-size: 0.85rem;
+  font-size: 0.82rem;
 
   letter-spacing: 0.16em;
 
@@ -342,9 +404,7 @@ body {
 
   display: inline-block;
 
-  transition: transform 0.15s ease, box-shadow 0.15s ease,
-
-    background 0.15s ease, color 0.15s ease;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, color 0.15s ease;
 
 }
 
@@ -486,33 +546,7 @@ body {
 
   text-align: left;
 
-  transition: transform 0.18s ease, box-shadow 0.18s ease,
-
-    border-color 0.18s ease;
-
-}
-
-
-
-.card h3 {
-
-  margin-top: 0;
-
-  margin-bottom: 8px;
-
-  font-size: 1.1rem;
-
-}
-
-
-
-.card p {
-
-  margin: 0;
-
-  font-size: 0.93rem;
-
-  opacity: 0.9;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
 
 }
 
@@ -554,53 +588,19 @@ body {
 
 
 
-.pricing-card h3 {
-
-  margin-top: 0;
-
-  margin-bottom: 6px;
-
-}
-
-
-
 .price {
-
-  margin-top: 0;
-
-  margin-bottom: 16px;
 
   font-weight: 600;
 
   color: #7ceeff;
 
-}
-
-
-
-.pricing-card ul {
-
-  padding-left: 18px;
-
-  margin-bottom: 22px;
+  margin-bottom: 16px;
 
 }
 
 
 
-.pricing-card li {
-
-  margin-bottom: 6px;
-
-  font-size: 0.93rem;
-
-  opacity: 0.92;
-
-}
-
-
-
-/* CONTACT + FOOTER */
+/* CONTACT */
 
 .contact-line {
 
@@ -656,13 +656,45 @@ body {
 
 
 
+/* Logo Floating Glow Effect */
+
+@keyframes logoFloatGlow {
+
+  0% {
+
+    transform: translateY(0);
+
+    filter: drop-shadow(0 0 0 rgba(0, 210, 255, 0.0));
+
+  }
+
+  50% {
+
+    transform: translateY(-6px);
+
+    filter: drop-shadow(0 0 22px rgba(0, 210, 255, 0.55));
+
+  }
+
+  100% {
+
+    transform: translateY(0);
+
+    filter: drop-shadow(0 0 0 rgba(0, 210, 255, 0.0));
+
+  }
+
+}
+
+
+
 /* RESPONSIVE */
 
 @media (max-width: 768px) {
 
   .nav-links {
 
-    display: none; /* simple: hide menu on very small screens for now */
+    display: none;
 
   }
 
