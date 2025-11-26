@@ -28,7 +28,13 @@
 
     <div class="overlay"></div>
 
+
+
     <div class="hero-content">
+
+      <img src="logo-altitude.png" alt="Altitude SupremeFolk logo" class="logo-hero" />
+
+
 
       <h1>AI Automation That Works While You Sleep</h1>
 
@@ -148,7 +154,7 @@
 
 
 
-  <!-- CONTACT SECTION -->
+  <!-- CONTACT -->
 
   <section class="section" id="contact">
 
