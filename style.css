@@ -80,6 +80,18 @@ body {
 
 
 
+.logo-hero {
+
+  width: 140px;
+
+  margin-bottom: 22px;
+
+  filter: drop-shadow(0 0 12px rgba(34, 211, 238, 0.6));
+
+}
+
+
+
 .hero h1 {
 
   font-size: clamp(2.2rem, 4vw, 3rem);
@@ -292,7 +304,7 @@ body {
 
 
 
-/* Secondary CTA in contact */
+/* Secondary CTA */
 
 .cta-btn-secondary {
 
@@ -311,10 +323,6 @@ body {
   font-weight: 600;
 
   text-decoration: none;
-
-  border: none;
-
-  cursor: pointer;
 
 }
 
@@ -344,9 +352,9 @@ footer {
 
 @media (max-width: 640px) {
 
-  .hero-content {
+  .logo-hero {
 
-    padding-inline: 16px;
+    width: 110px;
 
   }
 
@@ -371,14 +379,6 @@ footer {
   .section {
 
     padding: 50px 16px;
-
-  }
-
-
-
-  .card {
-
-    text-align: left;
 
   }
 
