@@ -76,7 +76,7 @@ body {
 
 
 
-/* Background glow + grid */
+/* Background glow */
 
 .page-bg {
 
@@ -84,7 +84,7 @@ body {
 
   inset: 0;
 
-  z-index: -1;
+  z-index: -2;
 
   background:
 
@@ -276,7 +276,79 @@ body {
 
 .hero {
 
+  position: relative;
+
   padding: 3.2rem 0 2.8rem;
+
+  overflow: hidden;
+
+}
+
+
+
+.hero-bg-layer {
+
+  position: absolute;
+
+  inset: 0;
+
+  z-index: -1;
+
+  background:
+
+    linear-gradient(to bottom, rgba(2, 9, 24, 0.96), rgba(1, 5, 14, 0.98)),
+
+    url("bg-ai.jpg") center/cover no-repeat;
+
+  mix-blend-mode: screen;
+
+  opacity: 0.55;
+
+}
+
+
+
+/* subtle animated glow */
+
+.hero::after {
+
+  content: "";
+
+  position: absolute;
+
+  inset: -30%;
+
+  background: radial-gradient(circle at 20% 0, rgba(0, 208, 179, 0.45), transparent 55%);
+
+  opacity: 0.6;
+
+  filter: blur(8px);
+
+  animation: heroGlow 12s ease-in-out infinite alternate;
+
+  z-index: -1;
+
+}
+
+
+
+@keyframes heroGlow {
+
+  from {
+
+    transform: translate3d(-10px, 0, 0) scale(1);
+
+    opacity: 0.55;
+
+  }
+
+  to {
+
+    transform: translate3d(40px, 10px, 0) scale(1.05);
+
+    opacity: 0.9;
+
+  }
 
 }
 
@@ -286,7 +358,7 @@ body {
 
   display: grid;
 
-  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1.05fr);
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.05fr);
 
   gap: 2.5rem;
 
@@ -300,7 +372,7 @@ body {
 
   margin: 0.4rem 0 0.8rem;
 
-  font-size: clamp(2.1rem, 3.1vw + 1.6rem, 3rem);
+  font-size: clamp(2.2rem, 3.1vw + 1.6rem, 3.1rem);
 
   letter-spacing: 0.01em;
 
@@ -368,7 +440,7 @@ body {
 
   font-weight: 500;
 
-  padding: 0.70rem 1.5rem;
+  padding: 0.7rem 1.5rem;
 
   border: 1px solid transparent;
 
@@ -464,7 +536,7 @@ body {
 
   border: 1px solid rgba(255, 255, 255, 0.06);
 
-  background: rgba(3, 10, 24, 0.7);
+  background: rgba(3, 10, 24, 0.8);
 
 }
 
@@ -526,7 +598,7 @@ body {
 
   border-radius: 999px;
 
-  background: rgba(1, 6, 20, 0.8);
+  background: rgba(1, 6, 20, 0.9);
 
   border: 1px solid rgba(255, 255, 255, 0.12);
 
@@ -538,9 +610,9 @@ body {
 
 .hero-logo-card img {
 
-  width: 40px;
+  width: 42px;
 
-  height: 40px;
+  height: 42px;
 
   border-radius: 13px;
 
@@ -1302,7 +1374,7 @@ textarea {
 
   .nav {
 
-    display: none; /* navbar بسيط بدون منيو للموبايل */
+    display: none; /* ممكن نضيف منيو لاحقاً */
 
   }
 
