@@ -1181,3 +1181,175 @@ textarea {
   padding: 1.2rem 0 1.5rem;
 
   background: radial-gradient(circle at top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.98));
+
+}
+
+
+
+.footer-inner {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 1rem;
+
+  font-size: 0.82rem;
+
+  color: var(--text-muted);
+
+}
+
+
+
+.footer-links {
+
+  display: flex;
+
+  gap: 0.9rem;
+
+}
+
+
+
+.footer-links a {
+
+  color: var(--text-muted);
+
+  text-decoration: none;
+
+}
+
+
+
+.footer-links a:hover {
+
+  color: var(--accent-soft);
+
+}
+
+
+
+/* ===== Responsive ===== */
+
+@media (max-width: 900px) {
+
+  .hero-inner {
+
+    grid-template-columns: minmax(0, 1fr);
+
+    gap: 2rem;
+
+  }
+
+
+
+  .hero {
+
+    padding-top: 2.5rem;
+
+  }
+
+
+
+  .hero-text {
+
+    max-width: none;
+
+  }
+
+
+
+  .hero-logo-block {
+
+    max-width: 320px;
+
+  }
+
+
+
+  .nav {
+
+    display: none; /* نضيف منيو موبيل لاحقاً لو حبيت */
+
+  }
+
+
+
+  .section {
+
+    padding: 2.3rem 0 2.2rem;
+
+  }
+
+
+
+  .contact-layout {
+
+    grid-template-columns: minmax(0, 1fr);
+
+  }
+
+
+
+  .contact-side {
+
+    order: -1;
+
+  }
+
+}
+
+
+
+@media (max-width: 600px) {
+
+  .header-inner {
+
+    padding: 0.7rem 0;
+
+  }
+
+
+
+  .form-row {
+
+    flex-direction: column;
+
+  }
+
+
+
+  .cards-grid {
+
+    gap: 0.85rem;
+
+  }
+
+
+
+  .section-heading h2 {
+
+    font-size: 1.45rem;
+
+  }
+
+
+
+  .hero-actions {
+
+    gap: 0.7rem;
+
+  }
+
+
+
+  .hero-points {
+
+    margin-top: 1.1rem;
+
+  }
+
+}
