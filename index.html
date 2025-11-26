@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 
 <html lang="en">
@@ -54,13 +52,31 @@
 
 
 
-      <!-- simple gear menu icon for future expansion -->
+      <!-- gear icon (mobile menu) -->
 
       <button class="gear-btn" aria-label="Menu">
 
         ⚙
 
       </button>
+
+    </div>
+
+
+
+    <!-- MOBILE MENU -->
+
+    <div class="mobile-menu" id="mobileMenu">
+
+      <a href="#services">Services</a>
+
+      <a href="#benefits">Why Us</a>
+
+      <a href="#pricing">Pricing</a>
+
+      <a href="#demo">AI Demo</a>
+
+      <a href="#contact">Contact</a>
 
     </div>
 
@@ -71,6 +87,8 @@
   <!-- HERO SECTION -->
 
   <section class="hero" id="top">
+
+    <!-- overlay فوق الخلفية -->
 
     <div class="overlay"></div>
 
@@ -326,10 +344,46 @@
 
   </section>
 
+
+
+  <!-- MOBILE MENU SCRIPT -->
+
+  <script>
+
+    const gearBtn = document.querySelector('.gear-btn');
+
+    const mobileMenu = document.getElementById('mobileMenu');
+
+
+
+    if (gearBtn && mobileMenu) {
+
+      gearBtn.addEventListener('click', () => {
+
+        mobileMenu.classList.toggle('open');
+
+      });
+
+
+
+      // close menu when clicking a link
+
+      mobileMenu.querySelectorAll('a').forEach(link => {
+
+        link.addEventListener('click', () => {
+
+          mobileMenu.classList.remove('open');
+
+        });
+
+      });
+
+    }
+
+  </script>
+
 </body>
 
 
 
 </html>
-
-
